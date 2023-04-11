@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.8rem;
+}
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+main{
+    position: relative;
+    height: 100vh;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60rem;
+    border-radius: 1.8rem;
+    box-shadow:  1rem 2rem 2rem 1rem hsl(222, 100%, 96%);
+}
+.container .result{
+    padding: 2.5rem;
+    float: left;
+    width: 30rem;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    text-align: center;
+    height: 100%;
+    border-radius: 1.8rem;
+}
+.container .marks{
+    float: right;
+    width:  30rem;
+    padding: 2.5rem;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear:both;
+}
+.container .result .result_heading{
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+.container .result .result_content{
+        height: 15rem;
+        width: 15rem;
+        padding: 3rem;
+        background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 2.5rem;
+}
+.container .result .result_get{
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+    font-size: 6rem;
+}
+.container .result .great{
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.container .marks .summary p{
+    font-weight: 800;
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 2.5rem;
+}
+.mr{
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+}
+.ms{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.marks_sub_img{
+    padding-right: 1rem;
+}
+.reaction{
+    background: hsla(0, 100%, 67%, 0.1);
+}
+.reaction_marks{
+    padding-left: 4.8rem;
+}
+.memory{
+    background: hsl(39, 100%, 56%,0.1);
+}
+.memory_marks{
+    padding-left: 5rem;
+}
+.verbal{
+    background: hsl(166, 100%, 37%,0.1);
+}
+.verbal_marks{
+    padding-left: 6.3rem;
+}
+.visual{
+    background: hsl(234, 85%, 45%,0.1);
+}
+.visual_marks{
+    padding-left: 6.5rem;
+}
+.btn{
+    color: #ffffff;
+    text-decoration: none;
+    background: hsl(224, 30%, 27%);
+    display: inline-block;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+a:hover{
+    background: hsl(241, 81%, 54%);
+}
+/* -------------------------------------utility css------------------------ */
+.pale_blue{
+    color: hsl(241, 100%, 89%);
+}
+@media(max-width:700px) and (min-width:375px){
+    :root{
+        font-size: 55%;
+    }
+    main{
+        height: 100vh;
+    }
+    .container{
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+        width: 100%;
+        box-shadow: none;
+    }
+    .container .result{
+        box-sizing: border-box;
+        float: none;
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+    .container .marks{
+        box-sizing: border-box;
+        float: none;
+        width: 100%;
+    }
+    .reaction_marks{
+        padding-left: 17.8rem;
+    }
+    .memory_marks{
+        padding-left: 18rem;
+    }
+    .verbal_marks{
+        padding-left: 19.3rem;
+    }
+    .visual_marks{
+        padding-left: 19.5rem;
+    }
+}
+@media(max-width:374px) and (min-width:200px){
+    :root{
+        font-size: 55%;
+    }
+    main{
+        height: 100vh;
+    }
+    .container{
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+        width: 100%;
+        box-shadow: none;
+    }
+    .container .result{
+        box-sizing: border-box;
+        float: none;
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+    .container .marks{
+        box-sizing: border-box;
+        float: none;
+        width: 100%;
+    }
+    .ms{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        justify-content: space-around;
+    }
+    
+}
